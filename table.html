@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+<body>
+    <!-- <input type="text"id="abc"/> -->
+    <table border="1" cellspacing="10 ">
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+    </table>
+    <script>
+        // let val = ''
+        // let input = document.getElementById('abc');
+        // if(val === ''){
+        //     input.style.border = '1px solid red';
+        // }else{
+        //     input.style.border = '1px solid black';
+        // }
+        // input.addEventListener('change',() => {
+        //     val =input.value ;
+        //     if(val === ''){
+        //         input.style.border = '1px solid red';
+        //     }else{
+        //         input.style.border = '1px solid black';
+        //     }
+        // })
+        let tds = document.getElementsByTagName('td');
+        for (let i = 0; i < tds.length; i++) {
+            // const element = array[i];
+            tds[i].innerHTML = 9-i;
+            
+        }
+    </script>
+</body>
+</html>
